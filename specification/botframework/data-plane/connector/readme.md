@@ -58,3 +58,16 @@ python:
   basic-setup-py: true
   output-folder: $(python-sdks-folder)/azure-botframework-connector
 ```
+
+## Connector API 3.0 - Java Settings
+
+These settings apply only when `--java` is specified on the command line.
+
+``` yaml $(java)
+java:
+  # override the default output folder
+  override-client-name: BotConnector
+  license-header: MICROSOFT_MIT_NO_VERSION
+  add-credentials: true
+  namespace: com.microsoft.azure.botframework.connector
+```
