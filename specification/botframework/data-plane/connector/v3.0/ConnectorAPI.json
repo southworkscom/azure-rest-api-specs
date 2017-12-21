@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "v3",
+    "version": "v3.0",
     "title": "Microsoft Bot Connector API - v3.0",
     "description": "The Bot Connector REST API allows your bot to send and receive messages to channels configured in the\r\n[Bot Framework Developer Portal](https://dev.botframework.com). The Connector service uses industry-standard REST\r\nand JSON over HTTPS.\r\n\r\nClient libraries for this REST API are available. See below for a list.\r\n\r\nMany bots will use both the Bot Connector REST API and the associated [Bot State REST API](/en-us/restapi/state). The\r\nBot State REST API allows a bot to store and retrieve state associated with users and conversations.\r\n\r\nAuthentication for both the Bot Connector and Bot State REST APIs is accomplished with JWT Bearer tokens, and is\r\ndescribed in detail in the [Connector Authentication](/en-us/restapi/authentication) document.\r\n\r\n# Client Libraries for the Bot Connector REST API\r\n\r\n* [Bot Builder for C#](/en-us/csharp/builder/sdkreference/)\r\n* [Bot Builder for Node.js](/en-us/node/builder/overview/)\r\n* Generate your own from the [Connector API Swagger file](https://raw.githubusercontent.com/Microsoft/BotBuilder/master/CSharp/Library/Microsoft.Bot.Connector.Shared/Swagger/ConnectorAPI.json)\r\n\r\n© 2016 Microsoft",
     "termsOfService": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx",
@@ -51,44 +51,8 @@
               "$ref": "#/definitions/AttachmentInfo"
             }
           },
-          "400": {
-            "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "401": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "403": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "404": {
-            "description": "The resource was not found.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "429": {
-            "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "An internal server has occurred. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "503": {
-            "description": "The service you are trying to communicate with is unavailable.",
+          "default": {
+            "description": "The request was malformed or otherwise incorrect.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -142,44 +106,8 @@
           "302": {
             "description": "The Location header describes where the content is now."
           },
-          "400": {
-            "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "401": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "403": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "404": {
-            "description": "The resource was not found.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "429": {
-            "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "An internal server has occurred. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "503": {
-            "description": "The service you are trying to communicate with is unavailable.",
+          "default": {
+            "description": "The request was malformed or otherwise incorrect.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -239,50 +167,8 @@
               "$ref": "#/definitions/ConversationResourceResponse"
             }
           },
-          "400": {
-            "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "401": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "403": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "404": {
-            "description": "The resource was not found.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "405": {
-            "description": "The method and URI you are trying to use is not allowed on this service.  For example, not all services support the DELETE or PUT verbs on an activity URI.  ",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "429": {
-            "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "An internal server has occurred. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "503": {
-            "description": "The service you are trying to communicate with is unavailable.",
+          "default": {
+            "description": "The request was malformed or otherwise incorrect.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -347,44 +233,8 @@
               "$ref": "#/definitions/ResourceResponse"
             }
           },
-          "400": {
-            "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "401": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "403": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "404": {
-            "description": "The resource was not found.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "429": {
-            "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "An internal server has occurred. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "503": {
-            "description": "The service you are trying to communicate with is unavailable.",
+          "default": {
+            "description": "The request was malformed or otherwise incorrect.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -456,50 +306,8 @@
               "$ref": "#/definitions/ResourceResponse"
             }
           },
-          "400": {
-            "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "401": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "403": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "404": {
-            "description": "The resource was not found.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "405": {
-            "description": "The method and URI you are trying to use is not allowed on this service.  For example, not all services support the DELETE or PUT verbs on an activity URI.  ",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "429": {
-            "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "An internal server has occurred. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "503": {
-            "description": "The service you are trying to communicate with is unavailable.",
+          "default": {
+            "description": "The request was malformed or otherwise incorrect.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -569,44 +377,8 @@
               "$ref": "#/definitions/ResourceResponse"
             }
           },
-          "400": {
-            "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "401": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "403": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "404": {
-            "description": "The resource was not found.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "429": {
-            "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "An internal server has occurred. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "503": {
-            "description": "The service you are trying to communicate with is unavailable.",
+          "default": {
+            "description": "The request was malformed or otherwise incorrect.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -651,50 +423,8 @@
           "202": {
             "description": "The request has been accepted for processing, but the processing has not been completed"
           },
-          "400": {
-            "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "401": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "403": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "404": {
-            "description": "The resource was not found.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "405": {
-            "description": "The method and URI you are trying to use is not allowed on this service.  For example, not all services support the DELETE or PUT verbs on an activity URI.  ",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "429": {
-            "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "An internal server has occurred. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "503": {
-            "description": "The service you are trying to communicate with is unavailable.",
+          "default": {
+            "description": "The request was malformed or otherwise incorrect.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -737,50 +467,8 @@
               }
             }
           },
-          "400": {
-            "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "401": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "403": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "404": {
-            "description": "The resource was not found.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "405": {
-            "description": "The method and URI you are trying to use is not allowed on this service.  For example, not all services support the DELETE or PUT verbs on an activity URI.  ",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "429": {
-            "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "An internal server has occurred. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "503": {
-            "description": "The service you are trying to communicate with is unavailable.",
+          "default": {
+            "description": "The request was malformed or otherwise incorrect.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -830,50 +518,8 @@
               }
             }
           },
-          "400": {
-            "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "401": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "403": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "404": {
-            "description": "The resource was not found.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "405": {
-            "description": "The method and URI you are trying to use is not allowed on this service.  For example, not all services support the DELETE or PUT verbs on an activity URI.  ",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "429": {
-            "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "An internal server has occurred. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "503": {
-            "description": "The service you are trying to communicate with is unavailable.",
+          "default": {
+            "description": "The request was malformed or otherwise incorrect.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -938,50 +584,8 @@
               "$ref": "#/definitions/ResourceResponse"
             }
           },
-          "400": {
-            "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "401": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "403": {
-            "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "404": {
-            "description": "The resource was not found.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "405": {
-            "description": "The method and URI you are trying to use is not allowed on this service.  For example, not all services support the DELETE or PUT verbs on an activity URI.  ",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "429": {
-            "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "500": {
-            "description": "An internal server has occurred. Inspect the message for a more detailed description.",
-            "schema": {
-              "$ref": "#/definitions/ErrorResponse"
-            }
-          },
-          "503": {
-            "description": "The service you are trying to communicate with is unavailable.",
+          "default": {
+            "description": "The request was malformed or otherwise incorrect.",
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
@@ -1044,7 +648,46 @@
       "properties": {
         "code": {
           "description": "Error code.",
-          "type": "string"
+          "type": "string",
+          "enum": [ "400", "401", "403", "404", "405", "429", "500", "503" ],
+          "x-ms-enum": {
+            "name": "ErrorCode",
+            "modelAsString": true,
+            "values": [
+              {
+                "value": "400",
+                "description": "The request was malformed or otherwise incorrect. Inspect the message for a more detailed description."
+              },
+              {
+                "value": "401",
+                "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password."
+              },
+              {
+                "value": "403",
+                "description": "The bot is not authorized to make this request. Please check your Microsoft App ID and Microsoft App Password."
+              },
+              {
+                "value": "404",
+                "description": "The resource was not found."
+              },
+              {
+                "value": "405",
+                "description": "The method and URI you are trying to use is not allowed on this service.  For example, not all services support the DELETE or PUT verbs on an activity URI."
+              },
+              {
+                "value": "429",
+                "description": "Too many requests have been submitted to this API. This error may be accompanied by a Retry-After header, which includes the suggested retry interval."
+              },
+              {
+                "value": "500",
+                "description": "An internal server has occurred. Inspect the message for a more detailed description."
+              },
+              {
+                "value": "503",
+                "description": "The service you are trying to communicate with is unavailable."
+              }
+            ]
+          }
         },
         "message": {
           "description": "A description of the error.",
