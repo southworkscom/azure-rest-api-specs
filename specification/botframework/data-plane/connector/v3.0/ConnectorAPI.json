@@ -794,7 +794,23 @@
         },
         "attachmentLayout": {
           "description": "Hint for how to deal with multiple attachments: [list|carousel] Default: list.",
-          "type": "string"
+          "type": "string",
+          "enum": [ "list", "carousel" ],
+          "x-ms-enum": {
+            "name": "AttachmentLayout",
+            "modelAsString": true,
+            "values": [
+              {
+                "value": "list",
+                "description": "Display multiple rich cards in carousel format."
+              },
+              {
+                "value": "carousel",
+                "description": "Display multiple rich cards in carousel format. If the channel does not support carousel format, it will display the rich cards in list format."
+              }
+            ]
+          }
+
         },
         "membersAdded": {
           "description": "Members added to the conversation. Present only if activity type is \"conversationUpdate\" and users joined the conversation.",
