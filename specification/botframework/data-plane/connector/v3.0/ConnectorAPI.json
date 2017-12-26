@@ -19,6 +19,19 @@
   "schemes": [
     "https"
   ],
+  "securityDefinitions": {
+    "bearerAuth": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "Access Token to authenticate calls to the Bot Connector Service."
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
   "paths": {
     "/v3/attachments/{attachmentId}": {
       "get": {
