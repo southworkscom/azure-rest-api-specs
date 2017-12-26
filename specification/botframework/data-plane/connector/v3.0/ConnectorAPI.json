@@ -1157,6 +1157,53 @@
         }
       }
     },
+    "CardContentType": {
+      "description": "Available Content-Types for Cards.",
+      "type": "string",
+      "enum": ["application/vnd.microsoft.card.keyboard", "application/vnd.microsoft.card.thumbnail", "application/vnd.microsoft.card.hero", "application/vnd.microsoft.card.receipt", "application/vnd.microsoft.card.signin", "application/vnd.microsoft.card.animation", "application/vnd.microsoft.card.audio", "application/vnd.microsoft.card.video", "application/vnd.microsoft.card.payment"],
+      "x-ms-enum": {
+        "name": "CardContentType",
+        "modelAsString": true,
+        "values": [
+          {
+            "value": "application/vnd.microsoft.card.keyboard",
+            "description": "Content-Type for a Keyboard card."
+          },
+          {
+            "value": "application/vnd.microsoft.card.thumbnail",
+            "description": "Content-Type for a Thumbnail card."
+          },
+          {
+            "value": "application/vnd.microsoft.card.hero",
+            "description": "Content-Type for a Hero card."
+          },
+          {
+            "value": "application/vnd.microsoft.card.receipt",
+            "description": "Content-Type for a Receipt card."
+          },
+          {
+            "value": "application/vnd.microsoft.card.signin",
+            "description": "Content-Type for a Signin card."
+          },
+          {
+            "value": "application/vnd.microsoft.card.animation",
+            "description": "Content-Type for an Animation card."
+          },
+          {
+            "value": "application/vnd.microsoft.card.audio",
+            "description": "Content-Type for an Audio card."
+          },
+          {
+            "value": "application/vnd.microsoft.card.video",
+            "description": "Content-Type for a Video card."
+          },
+          {
+            "value": "application/vnd.microsoft.card.payment",
+            "description": "Content-Type for a Payment card."
+          }
+        ]
+      }
+    },
     "HeroCard": {
       "description": "A Hero card (card with a single, large image).",
       "type": "object",
