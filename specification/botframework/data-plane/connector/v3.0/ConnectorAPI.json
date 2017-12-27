@@ -41,7 +41,6 @@
         "summary": "GetAttachmentInfo",
         "description": "Gets information about the specified attachment, including file name, type, and the available views (e.g., original or thumbnail).",
         "operationId": "Attachments_GetAttachmentInfo",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json",
@@ -400,7 +399,6 @@
         "summary": "DeleteActivity",
         "description": "Delete an existing activity.\r\n\r\nSome channels allow you to delete an existing activity. If successful, this operation removes the specified activity from the specified conversation.",
         "operationId": "Conversations_DeleteActivity",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json",
@@ -447,7 +445,6 @@
         "summary": "GetConversationMembers",
         "description": "Enumerate the members of a conversation.\r\n\r\nThis REST API takes a Conversation ID and returns an array of ChannelAccount objects representing the members of the conversation.",
         "operationId": "Conversations_GetConversationMembers",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json",
@@ -490,7 +487,6 @@
         "summary": "GetActivityMembers",
         "description": "Enumerate the members of an activity.\r\n\r\nThis REST API takes a Conversation ID and an Activity ID, returning an array of ChannelAccount objects representing the members of the particular activity in the conversation.",
         "operationId": "Conversations_GetActivityMembers",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json",
