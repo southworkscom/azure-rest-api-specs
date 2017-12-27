@@ -1,0 +1,30 @@
+{
+    "parameters": {
+        "conversationId": "B21UTEF8S:T03CWQ0QB:D2369CT7C",
+        "activityId": "1514310955.000243",
+        "activity": {
+            "type": "message",
+            "from": {
+                "id": "B21UTEF8S:T03CWQ0QB"
+            },
+            "text": "Activity updated.",
+            "channelId": "slack",
+            "recipient": {
+                "id": "U19KH8EHJ:T03CWQ0QB"
+            }
+        }
+    },
+    "responses": {
+        "200": {
+            "body": {
+                "id": "1514310955.000243"
+            }
+        },
+        "201": {
+            "body": {}
+        },
+        "202": {
+            "body": {}
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "parameters": {
+        "conversationId": "B21UTEF8S:T03CWQ0QB:D2369CT7C",
+        "activityId": "1514312453.000142",
+        "activity": {
+            "recipient": {
+                "id": "U19KH8EHJ:T03CWQ0QB"
+            },
+            "from": {
+                "id": "B21UTEF8S:T03CWQ0QB"
+            },
+            "type": "message",
+            "text": "Child activity.",
+            "channelId": "slack"
+        }
+    },
+    "responses": {
+        "200": {
+            "body": {
+                "id": "1514312455.000028"
+            }
+        },
+        "201": {
+            "body": {}
+        },
+        "202": {
+            "body": {}
+        }
+    }
+}
