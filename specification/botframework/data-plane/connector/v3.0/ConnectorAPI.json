@@ -189,6 +189,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Create a new Conversation.": {
+            "$ref": "./examples/conversations/CreateConversation.json"
+          }
         }
       }
     },
@@ -253,6 +258,11 @@
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Send a new Activity to a Conversation.": {
+            "$ref": "./examples/conversations/SendToConversation.json"
           }
         }
       }
@@ -326,6 +336,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Update an Activity.": {
+            "$ref": "./examples/conversations/UpdateActivity.json"
+          }
         }
       },
       "post": {
@@ -396,6 +411,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Reply to Activity.": {
+            "$ref": "./examples/conversations/ReplyToActivity.json"
+          }
         }
       },
       "delete": {
@@ -440,6 +460,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Delete an activity from Conversation.": {
+            "$ref": "./examples/conversations/DeleteActivity.json"
+          }
         }
       }
     },
@@ -481,6 +506,11 @@
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Get Members of a Conversation.": {
+            "$ref": "./examples/conversations/GetConversationMembers.json"
           }
         }
       }
@@ -530,6 +560,11 @@
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Get Members of an Activity.": {
+            "$ref": "./examples/conversations/GetActivityMembers.json"
           }
         }
       }
