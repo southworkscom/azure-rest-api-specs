@@ -70,8 +70,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "deprecated": false
+        }
       }
     },
     "/v3/attachments/{attachmentId}/views/{viewId}": {
@@ -125,8 +124,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "deprecated": false
+        }
       }
     },
     "/v3/conversations": {
@@ -186,8 +184,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "deprecated": false
+        }
       }
     },
     "/v3/conversations/{conversationId}/activities": {
@@ -252,8 +249,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "deprecated": false
+        }
       }
     },
     "/v3/conversations/{conversationId}/activities/{activityId}": {
@@ -325,8 +321,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "deprecated": false
+        }
       },
       "post": {
         "tags": [
@@ -396,8 +391,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "deprecated": false
+        }
       },
       "delete": {
         "tags": [
@@ -442,8 +436,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "deprecated": false
+        }
       }
     },
     "/v3/conversations/{conversationId}/members": {
@@ -486,8 +479,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "deprecated": false
+        }
       }
     },
     "/v3/conversations/{conversationId}/activities/{activityId}/members": {
@@ -537,8 +529,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "deprecated": false
+        }
       }
     },
     "/v3/conversations/{conversationId}/attachments": {
@@ -603,8 +594,7 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
-        },
-        "deprecated": false
+        }
       }
     }
   },
