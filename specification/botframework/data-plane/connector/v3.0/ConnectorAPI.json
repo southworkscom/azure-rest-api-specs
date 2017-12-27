@@ -834,7 +834,8 @@
           "type": "string",
           "enum": [ "markdown", "plain", "xml" ],
           "x-ms-enum": {
-            "name": "TextFormat"
+            "name": "TextFormat",
+            "modelAsString": true
           }
         },
         "attachmentLayout": {
@@ -910,6 +911,7 @@
           "type": "string",
           "enum": [ "acceptingInput", "expectingInput", "ignoringInput"],
           "x-ms-enum": {
+            "modelAsString": true,
             "name": "InputHint"
           }
         },
@@ -973,6 +975,7 @@
       ],
       "x-ms-enum": {
         "name": "ActivityType",
+        "modelAsString": true,
         "values": [
           {
             "value": "message",
