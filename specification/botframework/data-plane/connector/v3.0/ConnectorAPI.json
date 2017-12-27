@@ -1170,38 +1170,47 @@
         "values": [
           {
             "value": "application/vnd.microsoft.card.keyboard",
+            "name": "Keyboard",
             "description": "Content-Type for a Keyboard card."
           },
           {
             "value": "application/vnd.microsoft.card.thumbnail",
+            "name": "Thumbnail",
             "description": "Content-Type for a Thumbnail card."
           },
           {
             "value": "application/vnd.microsoft.card.hero",
+            "name": "Hero",
             "description": "Content-Type for a Hero card."
           },
           {
             "value": "application/vnd.microsoft.card.receipt",
+            "name": "Receipt",
             "description": "Content-Type for a Receipt card."
           },
           {
             "value": "application/vnd.microsoft.card.signin",
+            "name": "SignIn",
             "description": "Content-Type for a Signin card."
           },
           {
             "value": "application/vnd.microsoft.card.animation",
+            "name": "Animation",
             "description": "Content-Type for an Animation card."
           },
           {
             "value": "application/vnd.microsoft.card.audio",
+            "name": "Audio",
             "description": "Content-Type for an Audio card."
           },
           {
             "value": "application/vnd.microsoft.card.video",
+            "name": "Video",
             "description": "Content-Type for a Video card."
           },
           {
             "value": "application/vnd.microsoft.card.payment",
+            "name": "Payment",
             "description": "Content-Type for a Payment card."
           }
         ]
