@@ -790,6 +790,7 @@
     "Activity": {
       "description": "An Activity is the basic communication type for the Bot Framework 3.0 protocol.",
       "type": "object",
+      "required": ["type", "recipient"],
       "properties": {
         "type": {
           "$ref": "#/definitions/ActivityType",
