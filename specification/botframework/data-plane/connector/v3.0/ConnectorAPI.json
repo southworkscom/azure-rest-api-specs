@@ -69,6 +69,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Get an Attachment's Info": {
+            "$ref": "./examples/attachments/GetAttachmentInfo.json"
+          }
         }
       }
     },
@@ -118,6 +123,11 @@
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Retrieve the attachment's content.": {
+            "$ref": "./examples/attachments/GetAttachmentView.json"
           }
         }
       }

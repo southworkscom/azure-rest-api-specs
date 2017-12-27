@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "attachmentId": "at13796-GJS5yaxDLI"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "Bot.png",
+        "type": "image/png",
+        "views": [
+          {
+            "viewId": "thumbnail",
+            "size": 2532
+          },
+          {
+            "viewId": "original",
+            "size": 11476
+          }
+        ]
+      }
+    }
+  }
+}
