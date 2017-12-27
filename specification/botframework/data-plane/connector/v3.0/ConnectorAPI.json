@@ -80,12 +80,8 @@
         "summary": "GetAttachment",
         "description": "Gets the specified view of the specified attachment as binary content.",
         "operationId": "Attachments_GetAttachment",
-        "consumes": [],
         "produces": [
-          "application/json",
-          "text/json",
-          "application/xml",
-          "text/xml"
+          "application/octet-stream"
         ],
         "parameters": [
           {
