@@ -781,7 +781,7 @@
         },
         "conversation": {
           "$ref": "#/definitions/ConversationAccount",
-          "description": "Conversation."
+          "description": "Channel account information."
         },
         "recipient": {
           "$ref": "#/definitions/ChannelAccount",
@@ -880,7 +880,7 @@
           "description": "SuggestedActions are used to provide keyboard/quick-reply like behavior in many clients."
         },
         "attachments": {
-          "description": "Attachments.",
+          "description": "List of Attachments.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Attachment"
