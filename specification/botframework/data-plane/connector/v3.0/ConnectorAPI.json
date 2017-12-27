@@ -833,6 +833,7 @@
           "description": "Format of text fields. Default: markdown.",
           "type": "string",
           "enum": [ "markdown", "plain", "xml" ],
+          "default": "markdown",
           "x-ms-enum": {
             "name": "TextFormat"
           }
@@ -841,9 +842,9 @@
           "description": "Hint for how to deal with multiple attachments: [list|carousel] Default: list.",
           "type": "string",
           "enum": [ "list", "carousel" ],
+          "default": "list",
           "x-ms-enum": {
             "name": "AttachmentLayout",
-            "modelAsString": true,
             "values": [
               {
                 "value": "list",
@@ -1208,7 +1209,6 @@
       "enum": ["application/vnd.microsoft.card.keyboard", "application/vnd.microsoft.card.thumbnail", "application/vnd.microsoft.card.hero", "application/vnd.microsoft.card.receipt", "application/vnd.microsoft.card.signin", "application/vnd.microsoft.card.animation", "application/vnd.microsoft.card.audio", "application/vnd.microsoft.card.video", "application/vnd.microsoft.card.payment"],
       "x-ms-enum": {
         "name": "CardContentType",
-        "modelAsString": true,
         "values": [
           {
             "value": "application/vnd.microsoft.card.keyboard",
