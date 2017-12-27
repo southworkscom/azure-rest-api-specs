@@ -1,0 +1,19 @@
+{
+    "parameters": {
+        "conversationId": "B21UTEF8S:T03CWQ0QB:D2369CT7C"
+    },
+    "responses": {
+        "200": {
+            "body": [
+                {
+                    "id": "B21UTEF8S:T03CWQ0QB",
+                    "name": "botbuilder-pc-bot"
+                },
+                {
+                    "id": "U19KH8EHJ:T03CWQ0QB",
+                    "name": "pc"
+                }
+            ]
+        }
+    }
+}

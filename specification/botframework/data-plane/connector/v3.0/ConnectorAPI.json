@@ -41,7 +41,6 @@
         "summary": "GetAttachmentInfo",
         "description": "Gets information about the specified attachment, including file name, type, and the available views (e.g., original or thumbnail).",
         "operationId": "Attachments_GetAttachmentInfo",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json",
@@ -70,6 +69,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Get an Attachment's Info": {
+            "$ref": "./examples/attachments/GetAttachmentInfo.json"
+          }
         }
       }
     },
@@ -81,12 +85,8 @@
         "summary": "GetAttachment",
         "description": "Gets the specified view of the specified attachment as binary content.",
         "operationId": "Attachments_GetAttachment",
-        "consumes": [],
         "produces": [
-          "application/json",
-          "text/json",
-          "application/xml",
-          "text/xml"
+          "application/octet-stream"
         ],
         "parameters": [
           {
@@ -123,6 +123,11 @@
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Retrieve the attachment's content.": {
+            "$ref": "./examples/attachments/GetAttachmentView.json"
           }
         }
       }
@@ -183,6 +188,11 @@
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Create a new Conversation.": {
+            "$ref": "./examples/conversations/CreateConversation.json"
           }
         }
       }
@@ -248,6 +258,11 @@
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Send a new Activity to a Conversation.": {
+            "$ref": "./examples/conversations/SendToConversation.json"
           }
         }
       }
@@ -321,6 +336,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Update an Activity.": {
+            "$ref": "./examples/conversations/UpdateActivity.json"
+          }
         }
       },
       "post": {
@@ -391,6 +411,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Reply to Activity.": {
+            "$ref": "./examples/conversations/ReplyToActivity.json"
+          }
         }
       },
       "delete": {
@@ -400,7 +425,6 @@
         "summary": "DeleteActivity",
         "description": "Delete an existing activity.\r\n\r\nSome channels allow you to delete an existing activity. If successful, this operation removes the specified activity from the specified conversation.",
         "operationId": "Conversations_DeleteActivity",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json",
@@ -436,6 +460,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Delete an activity from Conversation.": {
+            "$ref": "./examples/conversations/DeleteActivity.json"
+          }
         }
       }
     },
@@ -447,7 +476,6 @@
         "summary": "GetConversationMembers",
         "description": "Enumerate the members of a conversation.\r\n\r\nThis REST API takes a Conversation ID and returns an array of ChannelAccount objects representing the members of the conversation.",
         "operationId": "Conversations_GetConversationMembers",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json",
@@ -479,6 +507,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Get Members of a Conversation.": {
+            "$ref": "./examples/conversations/GetConversationMembers.json"
+          }
         }
       }
     },
@@ -490,7 +523,6 @@
         "summary": "GetActivityMembers",
         "description": "Enumerate the members of an activity.\r\n\r\nThis REST API takes a Conversation ID and an Activity ID, returning an array of ChannelAccount objects representing the members of the particular activity in the conversation.",
         "operationId": "Conversations_GetActivityMembers",
-        "consumes": [],
         "produces": [
           "application/json",
           "text/json",
@@ -528,6 +560,11 @@
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Get Members of an Activity.": {
+            "$ref": "./examples/conversations/GetActivityMembers.json"
           }
         }
       }
@@ -593,6 +630,11 @@
             "schema": {
               "$ref": "#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Upload an Attachment.": {
+            "$ref": "./examples/attachments/UploadAttachment.json"
           }
         }
       }
@@ -748,6 +790,7 @@
     "Activity": {
       "description": "An Activity is the basic communication type for the Bot Framework 3.0 protocol.",
       "type": "object",
+      "required": ["type", "recipient"],
       "properties": {
         "type": {
           "$ref": "#/definitions/ActivityType",
@@ -791,6 +834,7 @@
           "description": "Format of text fields. Default: markdown.",
           "type": "string",
           "enum": [ "markdown", "plain", "xml" ],
+          "default": "markdown",
           "x-ms-enum": {
             "name": "TextFormat"
           }
@@ -799,9 +843,9 @@
           "description": "Hint for how to deal with multiple attachments: [list|carousel] Default: list.",
           "type": "string",
           "enum": [ "list", "carousel" ],
+          "default": "list",
           "x-ms-enum": {
             "name": "AttachmentLayout",
-            "modelAsString": true,
             "values": [
               {
                 "value": "list",
@@ -1166,7 +1210,6 @@
       "enum": ["application/vnd.microsoft.card.keyboard", "application/vnd.microsoft.card.thumbnail", "application/vnd.microsoft.card.hero", "application/vnd.microsoft.card.receipt", "application/vnd.microsoft.card.signin", "application/vnd.microsoft.card.animation", "application/vnd.microsoft.card.audio", "application/vnd.microsoft.card.video", "application/vnd.microsoft.card.payment"],
       "x-ms-enum": {
         "name": "CardContentType",
-        "modelAsString": true,
         "values": [
           {
             "value": "application/vnd.microsoft.card.keyboard",
