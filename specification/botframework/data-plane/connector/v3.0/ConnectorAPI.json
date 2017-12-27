@@ -631,6 +631,11 @@
               "$ref": "#/definitions/ErrorResponse"
             }
           }
+        },
+        "x-ms-examples": {
+          "Upload an Attachment.": {
+            "$ref": "./examples/attachments/UploadAttachment.json"
+          }
         }
       }
     }
