@@ -644,6 +644,7 @@
     "AttachmentInfo": {
       "description": "Metadata for an attachment.",
       "type": "object",
+      "required": [ "type", "views" ],
       "properties": {
         "name": {
           "description": "Name of the attachment.",
@@ -743,6 +744,7 @@
     "ConversationParameters": {
       "description": "Parameters for creating a new conversation.",
       "type": "object",
+      "required": [ "bot", "members" ],
       "properties": {
         "isGroup": {
           "description": "Indicates if this is a group conversation.",
@@ -790,7 +792,7 @@
     "Activity": {
       "description": "An Activity is the basic communication type for the Bot Framework 3.0 protocol.",
       "type": "object",
-      "required": ["type", "recipient"],
+      "required": ["type", "recipient", "from"],
       "properties": {
         "type": {
           "$ref": "#/definitions/ActivityType",
@@ -1183,6 +1185,7 @@
     "AttachmentData": {
       "description": "Attachment data.",
       "type": "object",
+      "required": [ "type", "originalBase64" ],
       "properties": {
         "type": {
           "description": "Content-Type of the attachment.",
