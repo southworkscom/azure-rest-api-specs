@@ -71,3 +71,15 @@ java:
   add-credentials: true
   namespace: com.microsoft.azure.botframework.connector
 ```
+
+### Connector API 3.0 - NodeJS Settings
+These settings apply only when `--nodejs` is specified on the command line.
+``` yaml $(nodejs)
+nodejs:
+  override-client-name: BotConnector
+  license-header: MICROSOFT_MIT_NO_VERSION
+  azure-arm: false
+  use-internal-constructors: true
+  namespace: Microsoft.Azure.BotFramework.Connector
+  clear-output-folder: true
+```
