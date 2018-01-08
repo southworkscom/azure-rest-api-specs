@@ -108,8 +108,8 @@
           "200": {
             "description": "Binary content that represents the specified view of the specified attachment.",
             "schema": {
-              "format": "byte",
-              "type": "string"
+              "format": "file",
+              "type": "object"
             }
           },
           "301": {
