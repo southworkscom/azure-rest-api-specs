@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "parameters": {
+      "activity": {
+        "recipient": {
+          "id": "U19KH8EHJ:T03CWQ0QB"
+        },
+        "from": {
+          "id": "B21UTEF8S:T03CWQ0QB"
+        },
+        "channelId": "slack",
+        "text": "Hi there!",
+        "type": "message"
+      },
+      "bot": {
+        "id": "B21UTEF8S:T03CWQ0QB"
+      },
+      "members": [
+        {
+          "id": "U19KH8EHJ:T03CWQ0QB"
+        }
+      ]
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "activityId": "1514296290.000025",
+        "id": "B21UTEF8S:T03CWQ0QB:D2369CT7C"
+      }
+    },
+    "201": {
+      "body": {}
+    },
+    "202": {
+      "body": {}
+    }
+  }
+}

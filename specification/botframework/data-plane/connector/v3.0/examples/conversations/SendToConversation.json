@@ -1,0 +1,29 @@
+{
+    "parameters": {
+        "conversationId": "B21UTEF8S:T03CWQ0QB:D2369CT7C",
+        "activity": {
+            "recipient": {
+                "id": "U19KH8EHJ:T03CWQ0QB"
+            },
+            "channelId": "slack",
+            "text": "Hello again!",
+            "from": {
+                "id": "B21UTEF8S:T03CWQ0QB"
+            },
+            "type": "message"
+        }
+    },
+    "responses": {
+        "200": {
+            "body": {
+                "id": "1514296291.000146"
+            }
+        },
+        "201": {
+            "body": {}
+        },
+        "202": {
+            "body": {}
+        }
+    }
+}
