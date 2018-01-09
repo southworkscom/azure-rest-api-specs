@@ -27,7 +27,7 @@ csharp:
   license-header: MICROSOFT_MIT_NO_VERSION
   azure-arm: false
   namespace: Microsoft.Azure.BotFramework.Connector
-  output-folder: $(csharp-sdks-folder)/BotFramework/dataPlane/Connector/Generated
+  output-folder: $(csharp-sdks-folder)/BotFramework/dataPlane/Connector/BotFramework.Connector/Generated
   clear-output-folder: true
 ```
 
